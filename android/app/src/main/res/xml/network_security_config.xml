@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow all HTTPS connections -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    
+    <!-- Domain-specific configurations for better DNS resolution -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">images.pexels.com</domain>
+        <domain includeSubdomains="true">randomuser.me</domain>
+        <domain includeSubdomains="true">investopedia.com</domain>
+        <domain includeSubdomains="true">shutterstock.com</domain>
+        <domain includeSubdomains="true">worldvectorlogo.com</domain>
+        <domain includeSubdomains="true">gstatic.com</domain>
+        <domain includeSubdomains="true">hinsdalelibrary.info</domain>
+    </domain-config>
+</network-security-config>
